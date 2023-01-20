@@ -9,7 +9,8 @@ provider "azurerm" {
 terraform {
   backend "azurerm" {
     storage_account_name = "randomrg"
-    container_name = prod.terraform.tfstate
+    container_name ="container1"
+         key          = "prod.terraform.tfstate"
     access_key = "pRvK122861Q6rxkF88XL95+ptFtJb6+ULWk1S0/PNLoBWag8rC5wVbSTaGKJsiV9fneQrTgCRINc+AStBJGboQ=="
   }
 }
